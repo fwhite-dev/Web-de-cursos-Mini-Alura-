@@ -1,0 +1,121 @@
+.headerPrincipal .container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerPrincipal-titulo {
+  display: inline-block;
+}
+.headerPrincipal-nav {
+  display: inline-block;
+  display: flex;
+}
+
+/* MAIN CURSOS*/
+.cursos__container .subtitulo {
+  margin-left: 10%;
+}
+
+.contenidoPrincipal-cursos {
+  margin: 0 auto;
+  display: flex;
+  width: 80%;
+  flex-wrap: wrap;
+}
+.contenidoPrincipal-cursos-link {
+  display: flex;
+  width: 23%;
+}
+
+/* SECCION VIDEO*/
+.videoSobre .container {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.videoSobre-video {
+}
+.videoSobre-sobre {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.videoSobre-sobre-list {
+  flex-grow: 1;
+}
+/* NAV FOOTER*/
+.rodapePrincipal-navMap-list {
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+/* FOOTER*/
+
+.rodapePrincipal-patrocinadores .container {
+  display: flex;
+  justify-content: space-between;
+}
+.rodapePrincipal-patrocinadores-list {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.rodapePrincipal-contatoForm-fieldset {
+  display: flex;
+}
+
+/* RESPONSI */
+
+@media (max-width: 768px) {
+  .headerPrincipal .container {
+    flex-direction: column;
+  }
+  .headerPrincipal-nav {
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .headerPrincipal-nav-link-app {
+    order: -1;
+  }
+  .contenidoPrincipal-cursos {
+    flex-direction: column;
+  }
+  .contenidoPrincipal-cursos-link {
+    width: 100%;
+  }
+
+  .videoSobre .container {
+    flex-direction: column;
+  }
+
+  .rodapePrincipal .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .rodapePrincipal-navMap-list {
+    flex-wrap: nowrap;
+    height: auto;
+    justify-content: space-between;
+  }
+
+  .rodapePrincipal-patrocinadores .container {
+    flex-direction: column;
+  }
+  .rodapePrincipal-patrocinadores-list {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .rodapePrincipal-contatoForm-fieldset {
+    justify-content: center;
+  }
+  .rodapePrincipal-contatoForm-submit {
+    display: inline-block;
+    margin: 0;
+    padding: 10px;
+  }
+}
